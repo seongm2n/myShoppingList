@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+ul {
+    padding:0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+    cursor: pointer;
+    background: transparent ;
+    outline: none;
+    border: none;
+}
+
+body{
+    background-color: beige;
+    text-align: center;
+}
+
+/* 0. */
+#display {
+    width: 498px;
+    height: 789px;
+    margin: auto;
+    margin-top: 90px;
+    background-color: #fff6a3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+/* 1. */
+.list__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.list__box h2 {
+    margin-bottom: 0;
+    font-size:  24px;
+    text-align: left;
+
+}
+
+
+
+.calendar,
+.date {
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    line-height: 27.6px;
+    border: 0;
+    padding: 0;
+    transition: all 300ms ease-in;
+}
+.calendar,
+.date:hover {
+    transform: scale(1.1);
+}
+
+
+.sidebar__toggleBtn {
+    margin-top:38px;
+    font-size: 30px;
+    color: var(--accent-color);
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+.sidebar__toggleBtn:hover{
+    color: yellowgreen;
+    transform: scale(1.1);
+}
+
+.sidebar {
+  position: absolute;
+  width: 458px;
+  height: 789px;
+  background-color:#FFFBF0;
+  border-radius: 40px;
+  display: none;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-around;
+
+}
+.sidebar__header .profile__photo{
+  margin-top: 20px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.sidebar__header h3 {
+  margin: 30px 0 0 0;
+}
+
+.sidebar__header .close__btn{
+  font-size: 23px;
+  padding: 0;
+  margin: 20px 0 0 0;
+  transition: all 300ms ease-in;
+}
+
+.sidebar__header .close__btn:hover{
+  color: yellowgreen;
+  transform: scale(1.1);
+}
+
+.sidebar .storage {
+  font-size: 15px;
+  display: grid;
+  row-gap: 16px;
+  text-align: left;
+  padding: 40px 0 0 30px;
+  cursor: pointer;
+}
+
+.sidebar.open {
+  display: block;
+
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar{
+    width: 458px;
+  }
+}
+
+
+/* 2. */
+.main__list {
+    background-color: #FFFBF0;
+    width: 498px;
+    height: 621px;
+    margin: auto;
+}
+
+.mart__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.place__choose.open {
+  display: block;
+}
+
+.place__row {
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 40px 10px 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: none;
+}
+
+.place__choose {
+    margin: 0;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+.place__choose .location {
+  font-size: 20px;
+  cursor: pointer;
+  margin:0;
+
+}
+
+.items{
+    height: 500px;
+    overflow-y: auto;
+}
+
+.item__input {
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.item__delete, .item__plus {
+    font-size: 16px;
+    transition: all 300ms ease-in;
+}
+
+.item__plus:hover {
+    color: yellowgreen;
+    transform: scale(1.1);
+}
+.item__delete:hover {
+    color: red;
+    transform: scale(1.1);
+}
+.item__divider{
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+}
+
+.input__item{
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+/* 3. */
+.location__button{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: yellowgreen;
+    transition: transform 300ms ease-in;
+
+}
+
+.location__button:hover{
+    transform: scale(1.1);
+}

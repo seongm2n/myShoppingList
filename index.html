@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4816c28cac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- 0. -->
+    <section id="display">
+        <!-- 1. HEADER-->
+        <header class="list__box">
+                <h2>My <br/>Shopping <br/>List</h2>
+                
+                <button class="calendar">
+                    <input class="date" type="date" >
+                </button>
+                <a href="#" class="sidebar__toggleBtn">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <aside class="sidebar ">
+                    <div class="sidebar__header">
+                        <img src="./img/profilephoto.jpeg" class="profile__photo" alt="">
+                        <h3>사용자아이디</h3>
+                        <button class="close__btn">
+                        <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                <button class="storage"><span>🛒 저장된 장바구니</span></button>
+                </aside>
+        </header>
+
+        <!-- 2. MIDDLE / 2-1.mart name / 2-2. + lists / 2-3. lists-->
+        <div class="main__list">
+            <ul class="mart__list">
+                <!-- 2-1. -->
+                <li class="place__choose">
+                    <select name="location" class="location__select">
+                        <option data-value="" > 🛒 choose a location</option>
+                        <option data-value="e-mart" >🛒 Emart</option>
+                        <option data-value="online-mall" >🛒 Onlinemall</option>
+                        <option data-value="supermarket"> 🛒 Supermarket</option>
+                    </select>
+                </li>
+                <li class="place__row">
+                    <div class="place">
+                    <span class="place__name">Kully</span>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 2-3. -->
+            <ul class="items">
+                <!-- <li class="item__row">
+                    <div class="item">
+                        <span class="item__name">Egg</span>
+                        <button class="item__delete">
+                            <i class="fa fa-trash-o"></i>
+                        </button>
+                    </div>
+                    <div class="item__divider"></div>
+                </li> -->
+                <!-- 2.2 -->
+                <li class="item__input">
+                    <div class="item">
+                        <input type="text" class="input__item">
+                        <button class="item__plus">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="item__divider"></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 3. FOOTER -->
+        <footer class="footer">
+            <div>
+                <button class="location__button">
+                    <i class="fa fa-shopping-basket"></i> <!--원하는 마트 추가 버튼-->
+                </button>
+            </div>
+        </footer>
+    </section>
+    <script src="main.js" defer></script>
+</body>
+</html>
