@@ -1,5 +1,6 @@
 # shopping_list
 <h2>💡프로젝트 소개</h2>
+<img width="1006" alt="스크린샷 2022-11-21 11 15 44" src="https://user-images.githubusercontent.com/62044613/202946353-746b1cbe-7105-4d1a-aff9-a851daf7a501.png">
 
 ✍🏻프로젝트 개요 및 동기 
 
