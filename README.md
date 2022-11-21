@@ -13,6 +13,7 @@
 
 
 📺 Gif 📺</br>
+![shopping list](https://user-images.githubusercontent.com/62044613/202946100-d85a1228-3092-437c-9c94-bfc2a72a268f.gif)
 
 
 
