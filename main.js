@@ -29,19 +29,19 @@ function onAdd() {
     input.focus();
 }
 
+let id = 0; //UUID
 function createItem(text){
     const itemRow = document.createElement('li');
     itemRow.setAttribute('class', 'item__row');
     itemRow.innerHTML = `
-    <div class="item">
-        <span class="item__name">${text}</span>
-        <button class="item__delete">
-            <i class="fa fa-trash-o"></i>
-        </button>
-    </div>
-    <div class="item__divider"></div>
-    `;
-    
+        <div class="item">
+            <span class="item__name">${text}</span>
+            <button class="item__delete">
+                <i class="fa fa-trash-o"></i>
+            </button>
+        </div>
+        <div class="item__divider"></div>`;
+    id++;
     return itemRow;
 }
 
@@ -57,6 +57,15 @@ input.addEventListener('keyup', (event) => {
     
     if(event.key === 'Enter'){
         onAdd();
+    }
+});
+
+//delete
+items.addEventListener('click', event => {
+    const id = event.target.dataset.id;
+    if (id) {
+        const toBeDeleted = document.querySelector(`.item__row[data-id="${id}"]`);
+        toBeDeleted.remove();
     }
 });
 
