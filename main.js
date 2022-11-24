@@ -33,11 +33,12 @@ let id = 0; //UUID
 function createItem(text){
     const itemRow = document.createElement('li');
     itemRow.setAttribute('class', 'item__row');
+    itemRow.setAttribute('data-id', id);
     itemRow.innerHTML = `
         <div class="item">
             <span class="item__name">${text}</span>
             <button class="item__delete">
-                <i class="fa fa-trash-o"></i>
+                <i class="fa fa-trash-o" data-id="${id}"></i>
             </button>
         </div>
         <div class="item__divider"></div>`;
