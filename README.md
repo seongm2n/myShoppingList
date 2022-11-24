@@ -1,6 +1,8 @@
 # shopping_list
 <h2>💡프로젝트 소개</h2>
-<img width="1006" alt="스크린샷 2022-11-21 11 15 44" src="https://user-images.githubusercontent.com/62044613/202946353-746b1cbe-7105-4d1a-aff9-a851daf7a501.png">
+<img width="907" alt="스크린샷 2022-11-24 17 01 52" src="https://user-images.githubusercontent.com/62044613/203726613-15e7909e-e7ae-4511-b0b3-a1d42c8e91e5.png">
+<img width="456" alt="스크린샷 2022-11-24 17 03 14" src="https://user-images.githubusercontent.com/62044613/203726620-bce62525-795c-4a99-a70f-a93c7ee20c6d.png">
+
 
 ✍🏻프로젝트 개요 및 동기 
 
@@ -10,8 +12,7 @@
 
 
 📺 Gif 📺</br>
-![shopping list](https://user-images.githubusercontent.com/62044613/202946100-d85a1228-3092-437c-9c94-bfc2a72a268f.gif)
-
+![shoppinglist](https://user-images.githubusercontent.com/62044613/203726682-5333e0ef-f5d3-4b33-afa1-ac5638fa8374.gif)
 
 
 🎀 기술 스택 🎀 
