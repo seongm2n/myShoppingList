@@ -36,6 +36,7 @@ function createItem(text){
     itemRow.setAttribute('data-id', id);
     itemRow.innerHTML = `
         <div class="item">
+            <input type="checkbox" id="check">
             <span class="item__name">${text}</span>
             <button class="item__delete">
                 <i class="fa fa-trash-o" data-id="${id}"></i>
